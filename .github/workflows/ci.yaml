@@ -1,0 +1,22 @@
+name: "ci"
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pdm-project/setup-pdm@v4
+      - name: Install dependencies
+        run: pdm install
+      - name: check formatting
+        run: pdm run ruff format --check
+      - name: check linting
+        run: pdm run ruff check
+      - name: check types
+        run: pdm run pyright
+      - name: build
+        run: pdm build

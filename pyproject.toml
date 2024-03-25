@@ -1,0 +1,38 @@
+[project]
+name = "curve-matcher"
+version = "0.1.0"
+description = ""
+authors = [{ name = "David Chanin", email = "chanindav@gmail.com" }]
+dependencies = []
+requires-python = ">=3.11"
+readme = "README.md"
+license = { text = "MIT" }
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+[tool.pdm.dev-dependencies]
+dev = ["pytest>=8.1.1", "ruff>=0.3.3", "pyright>=1.1.354"]
+
+[tool.pyright]
+typeCheckingMode = "strict"
+reportMissingTypeStubs = "none"
+reportUnknownMemberType = "none"
+reportUnknownArgumentType = "none"
+reportUnknownVariableType = "none"
+reportUntypedFunctionDecorator = "none"
+reportUnnecessaryIsInstance = "none"
+reportUnnecessaryComparison = "none"
+reportConstantRedefinition = "none"
+reportUnknownLambdaType = "none"
+
+[tool.isort]
+profile = "black"
+
+[tool.ruff]
+exclude = ["dist", "docs"]
+
+[tool.ruff.lint]
+ignore = ["E203", "E501", "E731"]
+extend-select = ["UP", "TID", "I", "F", "E", "ARG"]
