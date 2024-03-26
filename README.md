@@ -1,9 +1,9 @@
 # Curve Matcher Python
 
-[![ci](https://img.shields.io/github/actions/workflow/status/90hh/curve-matcher-py/ci.yaml?branch=main)](https://github.com/90hh/curve-matcher-py)
+[![ci](https://img.shields.io/github/actions/workflow/status/90HH/curve-matcher-py/ci.yaml?branch=main)](https://github.com/90HH/curve-matcher-py)
 [![license](https://badgen.net/static/license/MIT/blue)](https://opensource.org/licenses/MIT)
 
-A Python library for doing curve matching with Fréchet distance and Procrustes analysis, ported from the [Javascript curve-matcher library](https://github.com/90hh/curve-matcher-py).
+A Python library for doing curve matching with Fréchet distance and Procrustes analysis, ported from the [Javascript curve-matcher library](https://github.com/90HH/curve-matcher-py).
 
 ## Installation
 
@@ -145,13 +145,14 @@ Contributions are welcome! These steps will guide you through contributing to th
 
 - Fork the repo
 - Clone it and install dependencies
-
-  git clone https://github.com/90hh/curve-matcher-py
+  ```
+  git clone https://github.com/90HH/curve-matcher-py
   pdm install
+  ```
 
 Make and commit your changes. This project uses [PDM](https://pdm-project.org/latest/) for dependency management, [Ruff](https://docs.astral.sh/ruff/) for linting / formatting, and [Pyright](https://github.com/microsoft/pyright) for type checking. Make sure any changes pass linting and type-checking by running `pdm run pyright` and `pdm run ruff .` before committing.
 
-Finally send a [GitHub Pull Request](https://github.com/90hh/curve-matcher-py/compare?expand=1) with a clear list of what you've done. Make sure all of your commits are atomic (one feature per commit). Please add tests for any features that you add or change.
+Finally send a [GitHub Pull Request](https://github.com/90HH/curve-matcher-py/compare?expand=1) with a clear list of what you've done. Make sure all of your commits are atomic (one feature per commit). Please add tests for any features that you add or change.
 
 ## Sources
 
