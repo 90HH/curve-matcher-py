@@ -15,7 +15,7 @@ from curve_matcher import __version__  # noqa: E402
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = "steering-vectors"
+project = "curve-matcher"
 copyright = f"{datetime.today().year}"
 author = "90HH"
 
