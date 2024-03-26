@@ -1,7 +1,7 @@
 # Curve Matcher Python
 
-[![CircleCI](https://circleci.com/gh/90hh/curve-matcher-py/tree/master.svg?style=shield)](https://circleci.com/gh/90hh/curve-matcher-py/tree/master)
-[![license](https://badgen.net/npm/license/curve-matcher-py)](https://opensource.org/licenses/MIT)
+[![ci](https://img.shields.io/github/actions/workflow/status/90hh/curve-matcher-py/ci.yaml?branch=main)](https://github.com/90hh/curve-matcher-py)
+[![license](https://badgen.net/static/license/MIT/blue)](https://opensource.org/licenses/MIT)
 
 A Python library for doing curve matching with Fréchet distance and Procrustes analysis, ported from the [Javascript curve-matcher library](https://github.com/90hh/curve-matcher-py).
 
