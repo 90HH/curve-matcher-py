@@ -51,3 +51,17 @@ jobs:
         if: steps.release.outputs.released == 'true'
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
+      # build and deploy docs to gh-pages
+      # do this as part of the semantic release step to ensure version is bumped
+      - name: Install dependencies
+        run: pdm install
+      - name: Sphinx build
+        run: |
+          pdm run sphinx-build docs _build
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          publish_branch: gh-pages
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: _build/
+          force_orphan: true
