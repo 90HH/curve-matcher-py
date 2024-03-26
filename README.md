@@ -1,6 +1,7 @@
 # Curve Matcher Python
 
 [![ci](https://img.shields.io/github/actions/workflow/status/90HH/curve-matcher-py/ci.yaml?branch=main)](https://github.com/90HH/curve-matcher-py)
+[![PyPI](https://img.shields.io/pypi/v/curve-matcher?color=blue)](https://pypi.org/project/curve-matcher/)
 [![license](https://badgen.net/static/license/MIT/blue)](https://opensource.org/licenses/MIT)
 
 A Python library for doing curve matching with Fréchet distance and Procrustes analysis, ported from the [Javascript curve-matcher library](https://github.com/90HH/curve-matcher-py).
