@@ -147,9 +147,9 @@ Contributions are welcome! These steps will guide you through contributing to th
 - Clone it and install dependencies
 
   git clone https://github.com/90hh/curve-matcher-py
-  yarn install
+  pdm install
 
-Make and commit your changes. Make sure the commands yarn run build and yarn run test:prod are working.
+Make and commit your changes. This project uses [PDM](https://pdm-project.org/latest/) for dependency management, [Ruff](https://docs.astral.sh/ruff/) for linting / formatting, and [Pyright](https://github.com/microsoft/pyright) for type checking. Make sure any changes pass linting and type-checking by running `pdm run pyright` and `pdm run ruff .` before committing.
 
 Finally send a [GitHub Pull Request](https://github.com/90hh/curve-matcher-py/compare?expand=1) with a clear list of what you've done. Make sure all of your commits are atomic (one feature per commit). Please add tests for any features that you add or change.
 
