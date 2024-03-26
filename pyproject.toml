@@ -36,3 +36,11 @@ exclude = ["dist", "docs"]
 [tool.ruff.lint]
 ignore = ["E203", "E501", "E731"]
 extend-select = ["UP", "TID", "I", "F", "E", "ARG"]
+
+[tool.semantic_release]
+version_variables = [
+    "src/curve_matcher/__init__.py:__version__",
+    "pyproject.toml:version",
+]
+branch = "main"
+build_command = "pip install pdm && pdm build"
