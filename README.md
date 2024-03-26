@@ -101,7 +101,7 @@ Curve matcher also exports a few methods to help with Procrustes analysis. Howev
 from curve_matcher import rebalance_curve
 
 # redraw the curve using 50 equally spaced points
-balancedCurve = rebalance_curve(curve, { numPoints: 50 })
+balanced_curve = rebalance_curve(curve, numPoints=50)
 ```
 
 Then, to normalize scale and translation, pass the curve into `procrustes_normalize_curve` as below:
@@ -109,8 +109,8 @@ Then, to normalize scale and translation, pass the curve into `procrustes_normal
 ```python
 from curve_matcher import procrustes_normalize_curve, rebalance_curve
 
-balancedCurve = rebalance_curve(curve)
-scaledAndTranslatedCurve = procrustes_normalize_curve(balancedCurve)
+balanced_curve = rebalance_curve(curve)
+scaledAndTranslatedCurve = procrustes_normalize_curve(balanced_curve)
 ```
 
 There's also a function provided called `procrustes_normalize_rotation` to help normalize rotation using Procrustes analysis. It should be noted that this may give odd results if the 2 curves don't have a relatively similar shape to each other. Make sure that the curves are already rebalanced and have scale and translation normalized before using this function. This function can be used as below:
