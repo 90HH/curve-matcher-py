@@ -2,7 +2,28 @@
 
 
 
+## v0.2.0 (2024-03-27)
+
+### Chore
+
+* chore: fix project name in docs ([`df1ae6f`](https://github.com/90HH/curve-matcher-py/commit/df1ae6f552018693219d3a56b8e67027df5d9ff3))
+
+### Feature
+
+* feat: demonstrating feature bump via commit ([`4b5dd3b`](https://github.com/90HH/curve-matcher-py/commit/4b5dd3bdf8811b095e40a8b83a8e36f3a3af3394))
+
+### Unknown
+
+* Merge pull request #2 from 90HH/docs
+
+chore: adding docs with sphinx ([`f12f5f0`](https://github.com/90HH/curve-matcher-py/commit/f12f5f0a89de441a1960670b4c23f55b98a797de))
+
+
 ## v0.1.0 (2024-03-26)
+
+### Chore
+
+* chore: adding docs with sphinx ([`5637b11`](https://github.com/90HH/curve-matcher-py/commit/5637b11351b727eba05adff3358d94be3fb55248))
 
 ### Feature
 

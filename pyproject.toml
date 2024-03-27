@@ -1,6 +1,6 @@
 [project]
 name = "curve-matcher"
-version = "0.1.0"
+version = "0.2.0"
 description = "A Python library for doing curve matching with Fréchet distance and Procrustes analysis"
 authors = [{ name = "David Chanin", email = "chanindav@gmail.com" }]
 dependencies = []
